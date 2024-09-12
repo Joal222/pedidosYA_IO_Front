@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes fadeBackground {
+    from {
+        background-color: rgba(0, 0, 0, 0.85); /* Inicia con negro a 85% de opacidad */
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.35); /* Termina con negro a 25% de opacidad */
+    }
+}
+
+.fade-background {
+    animation: fadeBackground 1s ease-in-out forwards; /* Se mantiene en el estado final */
+}
